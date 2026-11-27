@@ -1,11 +1,16 @@
-#include <stdio.h>
-int main() {
+//factorial wala question
+#include<stdio.h>
+int fact(int n){
+    if(n==0)
+    return 1;//base condition
+    else 
+    return n * fact(n-1);//recursive call
+}
+int main()
+{
     int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    if (num % 2 == 0 && num % 3 == 0)
-        printf("%d is divisible by both 2 and 3.\n", num);
-    else
-        printf("%d is not divisible by both 2 and 3.\n", num);
+    printf("enter the number \n");
+    scanf("%d",&num);
+    printf("factorial=%d",fact(num));
     return 0;
 }

@@ -1,18 +1,16 @@
-#include <stdio.h>
-int main() {
-    int a, b, c;
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &a, &b, &c);
-    if (a >= b) {
-        if (a >= c)
-            printf("%d is the largest.\n", a);
-        else
-            printf("%d is the largest.\n", c);
-    } else {
-        if (b >= c)
-            printf("%d is the largest.\n", b);
-        else
-            printf("%d is the largest.\n", c);
-    }
+//sum of n natural number
+#include<Stdio.h>
+int sum(int n){
+if(n==0)
+return 0;
+return n+sum(n-1);
+}
+int main()
+{
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    printf("sum=%d",sum(n));
     return 0;
+
 }

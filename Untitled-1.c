@@ -1,11 +1,15 @@
-#include <stdio.h>
-int main() {
-    int i;
-    float f;
-    char c;
-    double d;
-    printf("Enter an integer, float, character, and double:\n");
-    scanf("%d %f %c %lf", &i, &f, &c, &d);
-    printf("Integer: %d\nFloat: %f\nCharacter: %c\nDouble: %lf\n", i, f, c, d);
+#include<stdio.h>
+int add(int,int);
+int main()
+
+{
+    int result;
+    result=add(10,20);
+    printf("result=%d",result);
     return 0;
+}
+int add(int a,int b){
+    int sum;
+    sum=a+b;
+    return sum;
 }

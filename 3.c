@@ -1,14 +1,13 @@
-#include <stdio.h>
-int main() {
-    int a, b;
-    printf("Enter two integers: ");
-    scanf("%d %d", &a, &b);
-    printf("Sum: %d\n", a + b);
-    printf("Difference: %d\n", a - b);
-    printf("Product: %d\n", a * b);
-    if (b != 0)
-        printf("Quotient: %.2f\n", (float)a / b);
-    else
-        printf("Division by zero error.\n");
-    return 0;
+#include<stdio.h>
+int square()
+{
+    int n=4;
+    return n*n;
+}
+int main()
+{
+    int s;
+s=square();
+printf("the square is %d",s);
+return 0;
 }

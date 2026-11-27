@@ -1,11 +1,16 @@
-#include <stdio.h>
-int main() {
-    int marks;
-    printf("Enter marks: ");
-    scanf("%d", &marks);
-    if (marks >= 40)
-        printf("Passed.\n");
-    else
-        printf("Failed.\n");
+//factorial wala question
+#include<stdio.h>
+int fact(int n){
+    if(n==0)
+    return 1;//base condition
+    else 
+    return n * fact(n-1);//recursive call
+}
+int main()
+{
+    int num;
+    printf("enter the number \n");
+    scanf("%d",&num);
+    printf("factorial=%d",fact(num));
     return 0;
 }

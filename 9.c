@@ -1,11 +1,13 @@
-#include <stdio.h>
-int main() {
-    int num;
-    printf("Enter an integer: ");
-    scanf("%d", &num);
-    if (num % 2 == 0)
-        printf("%d is even.\n", num);
-    else
-        printf("%d is odd.\n", num);
+#include<stdio.h>
+int add(int a, int b)
+{
+    return a+b;
+}
+int main()
+{
+    int sum;
+    sum=add(10,20);
+    printf("sum =%d",sum);
     return 0;
 }
+//udf with arguments and return value

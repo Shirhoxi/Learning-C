@@ -1,8 +1,10 @@
-#include <stdio.h>
-int main() {
-    printf("Name:Aadarsha\n");
-    printf("Address:Kathmandu, Nepal\n");
-    printf("Age:18\n");
-    printf("Contact:9800000000\n");
+//library function
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter two numbers:");
+    scanf("%d %d",&a,&b);
+    printf("sum=%d",a+b);
     return 0;
 }

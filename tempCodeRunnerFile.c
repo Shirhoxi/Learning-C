@@ -1,13 +1,16 @@
-#include <stdio.h>
-int main() 
+//sum of n natural number
+#include<Stdio.h>
+int sum(int n){
+if(n==0)
+return 0;
+return n+sum(n-1);
+}
+int main()
 {
-    int n =5;
-    for(int i=1;i <=n; i++)
-    {
-        for(int j=1;j<=n-i;j++)
-        {
-            printf(" ");
-        }
-        
-    }
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    printf("sum=%d",sum(n));
+    return 0;
+
 }

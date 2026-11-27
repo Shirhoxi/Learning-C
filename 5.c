@@ -1,8 +1,14 @@
-#include <stdio.h>
-int main() {
-    char c;
-    printf("Enter a character: ");
-    scanf("%c", &c);
-    printf("Character: %c, ASCII value: %d\n", c, c);
+//argument with return type 
+#include<stdio.h>
+int square(int n){
+    return n*n;
+
+
+}
+int main()
+{
+    int s;
+    s=square(4);//function call
+    printf("%d",s);
     return 0;
 }
